@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ base_url }}styles/img/favicon.ico">
   <link rel="stylesheet" href="{{ base_url }}styles/css/styles.css">
   {% include 'partials/meta.html' -%}
+  {% include 'partials/analytics.html' -%}
   {% if request.endpoint == "abs" -%}
     {# This is needed for BBB hydration, otherwise it requests javascript files to /abs/ #}
     <base href="{{ base_url }}">
